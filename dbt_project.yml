@@ -36,5 +36,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  admin_maturity:
+  bing:
+    -name: impressions,
+    -name: conversion_cost,
+    -name: cpc,
+    -name: engagement_cost
     
