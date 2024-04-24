@@ -1,3 +1,5 @@
 select
+channel,
 (sum(spend) / SUM(clicks)) as cpc
- from {{ ref('src_ads_tiktok_ads_all_data')}}
+from {{ ref('src_ads_tiktok_ads_all_data')}}
+group by channel
