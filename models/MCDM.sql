@@ -1,4 +1,8 @@
 
+{{ config (
+    materialized="table"
+)}}
+
 select channel, conversion_cost, engagement_cost, cpc, impressions from {{ ref('facebook') }}
 
 union all
